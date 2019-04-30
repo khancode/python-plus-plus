@@ -1,0 +1,6 @@
+Notes
+Regex tester
+- https://regex101.com/r/dLp0uh/1
+
+TODO
+[] Need to implement a Regex pattern for -- operators
