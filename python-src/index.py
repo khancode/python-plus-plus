@@ -11,12 +11,9 @@ Xfas++
 asef1230++
 _fas324effs++
 
-# TODO: variable name shouldn't be matched by REGEX but it currently does
-123_omar++
-
 # 32123++ # invalid python variable
 # Note, our library should still work with commented code such as below
-# x++
+# x += 1
 
 print(x) # x should be 1
 print(Xfas) # equal 2

@@ -8,6 +8,10 @@ Business requirements
 - Replace x++ with x += 1
 - Replace x-- with x -= 1
 - Only concerned about post increment/decrement operators
+- Ignore ++/-- within strings
+
+Optional features
+- Ignore ++/-- within comments
 
 Call Flow
 - As a user, you will write normal Python code inside normal python modules (files ending with .py)
