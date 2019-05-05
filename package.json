@@ -9,5 +9,8 @@
   },
   "author": "Omar Khan (khancode)",
   "license": "ISC",
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "mkdirp": "^0.5.1"
+  }
 }

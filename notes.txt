@@ -8,11 +8,11 @@ tohuvavohu: whereas in python y = x += 1 is invalid syntax
 - tohuvavohu: Not trying to rain on your parade - keep going with your idea. I think the way to solve this in the real world is to walk through the python abstract syntax tree (AST) during compilation/interpreting which is a much more difficult problem.
 
 TODO
+[x] Dynamically create directories when outputting resultant .py files
 [] Handle invalid varible name being matched by REGEX pattern: 123_omar++
-[] Dyanmically create directories when outputting resultant .py files
-[x] Parse each .py file, replace ++ with += 1, and output result to ./build directory
-[x] Recursively read all files in a source directory.
 
 Completed
 [x] Need to implement a Regex pattern for -- operators
+[x] Parse each .py file, replace ++ with += 1, and output result to ./build directory
+[x] Recursively read all files in a source directory.
 
