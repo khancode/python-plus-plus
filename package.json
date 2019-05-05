@@ -4,8 +4,8 @@
   "description": "Python Plus Plus",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js",
-    "test-run": "node index.js && python build/test/index.bundle.py"
+    "test": "npm run build && python build/python-src/index.py",
+    "build": "node index.js"
   },
   "author": "Omar Khan (khancode)",
   "license": "ISC",

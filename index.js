@@ -3,7 +3,7 @@ const mkdirp = require('mkdirp');
 const path = require('path');
 
 const TYPE = 'utf8';
-const REGEX = /^[\_]*[a-zA-Z]+[a-zA-Z0-9]*\+\+/gm;
+const REGEX = /^[\_]*[a-zA-Z]+[a-zA-Z0-9]*((\+\+)|(\-\-))/gm;
 
 const pythonFiles = [];
 
@@ -45,7 +45,8 @@ function parseFile(filePath, type) {
         const index = match.index;
 
         const varText = textFound.substring(0, textFound.length - 2);
-        const pythonIncrementText = `${varText} += 1`;
+        const operatorChar = textFound[textFound.length-1];
+        const pythonIncrementText = `${varText} ${operatorChar}= 1`;
 
         // Replace ++ with += 1 in original text
         const modified = text.substring(0, index) + pythonIncrementText + text.substring(index + textFound.length);

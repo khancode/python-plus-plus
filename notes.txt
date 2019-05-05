@@ -1,6 +1,6 @@
 Notes
 Regex tester
-- https://regex101.com/r/dLp0uh/2
+- https://regex101.com/r/dLp0uh/3
 
 Important cases to consider:
  - tohuvavohu: ++ has different semantics than I think you're doing here. For example, in c++, you can do: int x = 3; int y = x++; then x will equal 4 but y will be equal to 3 (the expression evaluates before x is incremented).
@@ -8,6 +8,7 @@ tohuvavohu: whereas in python y = x += 1 is invalid syntax
 - tohuvavohu: Not trying to rain on your parade - keep going with your idea. I think the way to solve this in the real world is to walk through the python abstract syntax tree (AST) during compilation/interpreting which is a much more difficult problem.
 
 TODO
+[x] Add support of -- operator
 [x] Dynamically create directories when outputting resultant .py files
 [x] Handle invalid variable name being matched by REGEX pattern: 123_omar++
 
