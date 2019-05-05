@@ -3,7 +3,7 @@ const mkdirp = require('mkdirp');
 const path = require('path');
 
 const TYPE = 'utf8';
-const REGEX = new RegExp('[\\-]*[a-zA-z]+[a-zA-Z0-9]*\\+\\+', 'g');
+const REGEX = /^[\_]*[a-zA-Z]+[a-zA-Z0-9]*\+\+/gm;
 
 const pythonFiles = [];
 

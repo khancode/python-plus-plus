@@ -1,6 +1,6 @@
 Notes
 Regex tester
-- https://regex101.com/r/dLp0uh/1
+- https://regex101.com/r/dLp0uh/2
 
 Important cases to consider:
  - tohuvavohu: ++ has different semantics than I think you're doing here. For example, in c++, you can do: int x = 3; int y = x++; then x will equal 4 but y will be equal to 3 (the expression evaluates before x is incremented).
@@ -9,7 +9,7 @@ tohuvavohu: whereas in python y = x += 1 is invalid syntax
 
 TODO
 [x] Dynamically create directories when outputting resultant .py files
-[] Handle invalid varible name being matched by REGEX pattern: 123_omar++
+[x] Handle invalid variable name being matched by REGEX pattern: 123_omar++
 
 Completed
 [x] Need to implement a Regex pattern for -- operators
